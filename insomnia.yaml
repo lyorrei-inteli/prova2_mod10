@@ -1,0 +1,488 @@
+_type: export
+__export_format: 4
+__export_date: 2024-06-14T13:15:17.664Z
+__export_source: insomnia.desktop.app:v9.2.0
+resources:
+  - _id: req_a4eddcc2397e432098cb3540cd3731c6
+    parentId: wrk_28b7b54fccee47cda0e65a86ec843681
+    modified: 1718370775759
+    created: 1718370718617
+    url: http://localhost/blog
+    name: Get blogs
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1718370718618
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_28b7b54fccee47cda0e65a86ec843681
+    parentId: null
+    modified: 1718370368948
+    created: 1718370368948
+    name: FastAPI 0.1.0
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_4344df6e1407488a872e767bdb7a8a54
+    parentId: wrk_28b7b54fccee47cda0e65a86ec843681
+    modified: 1718370799952
+    created: 1718370773872
+    url: http://localhost/blog
+    name: Create blog
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": 1,
+          "title": "string",
+          "content": "string"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1717827352884
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2c597f7442034b688a82595d95b08fcb
+    parentId: wrk_28b7b54fccee47cda0e65a86ec843681
+    modified: 1718370862542
+    created: 1718370855314
+    url: http://localhost/blog/:id
+    name: Get blog
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": 1,
+          "title": "string",
+          "content": "string"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1717691511450.5
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b3fc4c1f809549b1bbff898d494f0f8d
+    parentId: wrk_28b7b54fccee47cda0e65a86ec843681
+    modified: 1718370876701
+    created: 1718370873069
+    url: http://localhost/blog/:id
+    name: Delete blog
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": 1,
+          "title": "string",
+          "content": "string"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1717623590733.75
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_386fb123d4b84774b9ea1a8793382a5c
+    parentId: wrk_28b7b54fccee47cda0e65a86ec843681
+    modified: 1718370843081
+    created: 1718370818261
+    url: http://localhost/blog/:id
+    name: Update blog
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": 1,
+          "title": "string",
+          "content": "string"
+        }
+    preRequestScript: ""
+    parameters:
+      - id: pair_9f7ebc01c841471995345d2c43359e6d
+        name: ""
+        value: ""
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1717555670017
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_99dbe0fc82d9b49da1721bc62e77b3cb82901054
+    parentId: wrk_28b7b54fccee47cda0e65a86ec843681
+    modified: 1718370371633
+    created: 1718370371633
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1718370371633
+    _type: environment
+  - _id: jar_99dbe0fc82d9b49da1721bc62e77b3cb82901054
+    parentId: wrk_28b7b54fccee47cda0e65a86ec843681
+    modified: 1718370371640
+    created: 1718370371640
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_3fa066e25295408d806b940acff85ad4
+    parentId: wrk_28b7b54fccee47cda0e65a86ec843681
+    modified: 1718370668939
+    created: 1718370368950
+    fileName: FastAPI 0.1.0
+    contents: |-
+      {
+        "openapi": "3.1.0",
+        "host": "localhost",
+        "info": {
+          "title": "FastAPI",
+          "version": "0.1.0"
+        },
+        "paths": {
+          "/blog": {
+            "get": {
+              "summary": "Get Blog Posts",
+              "operationId": "get_blog_posts_blog_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "post": {
+              "summary": "Create Blog Post",
+              "operationId": "create_blog_post_blog_post",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/CreatePost"
+                    }
+                  }
+                },
+                "required": true
+              },
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/blog/{id}": {
+            "get": {
+              "summary": "Get Blog Post",
+              "operationId": "get_blog_post_blog__id__get",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "title": "Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete Blog Post",
+              "operationId": "delete_blog_post_blog__id__delete",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "title": "Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "put": {
+              "summary": "Update Blog Post",
+              "operationId": "update_blog_post_blog__id__put",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "title": "Id"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/UpdatePost"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "CreatePost": {
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "title": "Id"
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title"
+                },
+                "content": {
+                  "type": "string",
+                  "title": "Content"
+                }
+              },
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "content"
+              ],
+              "title": "CreatePost"
+            },
+            "HTTPValidationError": {
+              "properties": {
+                "detail": {
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  },
+                  "type": "array",
+                  "title": "Detail"
+                }
+              },
+              "type": "object",
+              "title": "HTTPValidationError"
+            },
+            "UpdatePost": {
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Title"
+                },
+                "content": {
+                  "type": "string",
+                  "title": "Content"
+                }
+              },
+              "type": "object",
+              "required": [
+                "title",
+                "content"
+              ],
+              "title": "UpdatePost"
+            },
+            "ValidationError": {
+              "properties": {
+                "loc": {
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "integer"
+                      }
+                    ]
+                  },
+                  "type": "array",
+                  "title": "Location"
+                },
+                "msg": {
+                  "type": "string",
+                  "title": "Message"
+                },
+                "type": {
+                  "type": "string",
+                  "title": "Error Type"
+                }
+              },
+              "type": "object",
+              "required": [
+                "loc",
+                "msg",
+                "type"
+              ],
+              "title": "ValidationError"
+            }
+          }
+        }
+      }
+    contentType: yaml
+    _type: api_spec

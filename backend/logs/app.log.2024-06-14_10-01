@@ -1,0 +1,4 @@
+{"time": "2024-06-14 10:01:25,285", "name": "main", "level": "INFO", "message": "Getting all posts"}
+{"time": "2024-06-14 10:04:23,480", "name": "watchfiles.main", "level": "INFO", "message": "4 changes detected"}
+{"time": "2024-06-14 10:04:32,611", "name": "watchfiles.main", "level": "INFO", "message": "1 change detected"}
+{"time": "2024-06-14 10:04:32,972", "name": "watchfiles.main", "level": "INFO", "message": "1 change detected"}
