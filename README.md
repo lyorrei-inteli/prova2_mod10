@@ -4,7 +4,7 @@ Desenvolvido por Lyorrei Shono Quintão
 
 ## Introdução
 
-Este projeto é uma API simples desenvolvida para a prova 2 do módulo 10. Implementa uma API RESTful assíncrona usando Fastapi em Python e inclui um CRUD de blogs.
+Este projeto é uma API simples desenvolvida para a prova 2 do módulo 10. Implementa uma API RESTful usando Fastapi em Python e inclui um CRUD de blogs.
 
 ## Configuração e Instalação
 
