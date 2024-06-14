@@ -46,6 +46,3 @@ A aplicação estará disponível em `http://127.0.0.1/`.
 ## Insomnia
 
 Você pode utilizar o arquivo `insomnia.yaml` para importar as requisições no Insomnia e testá-las.
-
-## Vídeo de demonstração
-https://youtu.be/IQ2VZNZnKlk
